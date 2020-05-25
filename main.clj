@@ -1,5 +1,4 @@
-(clojure.pprint/pprint
-  (map vector
-    (range 25)
-    (cycle [:fizz :_ :_])
-    (cycle [:buzz :_ :_ :_ :_])))
+(dotimes [_ 10]
+  (let [greeting "hello" name "kevin"]
+  (println (clojure.string/join " " [greeting name]))
+  ))
